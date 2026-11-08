@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#24483a">
+<title>بوابة الثقافة المؤسسية | ثانوية خولة بنت الأسود</title>
+<style>
+:root{--green:#24483a;--green2:#35644e;--sage:#dce6d7;--cream:#f7f2e7;--sand:#e8dcc4;--gold:#b99a61;--ink:#26362d;--muted:#68766b;--white:#fffdf8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Tahoma","Arial",sans-serif;background:var(--cream);color:var(--ink);line-height:1.8}
+a{color:inherit;text-decoration:none}.topline{height:6px;background:linear-gradient(90deg,var(--gold),#e7d5a9,var(--green2))}
+header{position:sticky;top:0;z-index:20;background:rgba(247,242,231,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(36,72,58,.12)}
+.nav{max-width:1180px;margin:auto;padding:12px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--green)}.seal{width:45px;height:45px;border-radius:50% 50% 45% 45%;display:grid;place-items:center;background:var(--green);color:#f7e8bf;font-size:23px;box-shadow:inset 0 0 0 2px #d2bb83,inset 0 0 0 5px var(--green)}
+.brand small{display:block;font-size:11px;color:var(--muted);font-weight:500}.navlinks{display:flex;gap:22px;align-items:center;font-size:13px;font-weight:700}.navlinks a:hover{color:var(--gold)}.nav-cta{background:var(--green);color:white;padding:9px 15px;border-radius:999px}
+.hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 90% 15%,rgba(185,154,97,.22),transparent 35%),linear-gradient(125deg,#203f33,#315d48);color:#fffdf7}
+.hero:before,.hero:after{content:"";position:absolute;border:1px solid rgba(226,208,161,.2);border-radius:50%;width:450px;height:450px;left:-160px;top:-230px}.hero:after{width:330px;height:330px;left:-95px;top:-170px}
+.hero-inner{max-width:1180px;margin:auto;padding:78px 24px 86px;display:grid;grid-template-columns:1.35fr .65fr;gap:50px;align-items:center;position:relative;z-index:1}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(234,219,178,.5);color:#eadbb2;padding:6px 13px;border-radius:999px;font-size:12px;letter-spacing:.2px}
+h1{font-size:clamp(32px,4.2vw,56px);line-height:1.35;margin:20px 0 14px;letter-spacing:-1px}h1 span{color:#e3cd91}.hero p{font-size:17px;color:#e0e8df;max-width:670px;margin:0 0 26px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:12px 20px;border-radius:12px;font-weight:700;font-size:14px;cursor:pointer;border:1px solid transparent;transition:.2s}.btn.primary{background:#e6d3a0;color:#263d30}.btn.primary:hover{background:#f3e6c2;transform:translateY(-2px)}.btn.ghost{border-color:rgba(255,255,255,.4);color:white}.btn.ghost:hover{background:rgba(255,255,255,.1)}
+.hero-art{display:flex;justify-content:center;align-items:center;min-height:290px}.emblem{width:250px;height:250px;border:1px solid rgba(226,208,161,.7);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;background:radial-gradient(circle,rgba(255,255,255,.08),transparent 65%);box-shadow:0 0 0 16px rgba(255,255,255,.025),0 0 0 34px rgba(255,255,255,.02)}
+.emblem:before,.emblem:after{content:"";position:absolute;inset:17px;border:1px dashed rgba(226,208,161,.6);border-radius:50%}.emblem:after{inset:35px;border-style:solid}.leaf{font-size:100px;color:#e4d19d;line-height:1;filter:drop-shadow(0 8px 10px #142d22)}.emblem-caption{position:absolute;bottom:28px;font-size:12px;letter-spacing:2px;color:#f1e5c5}
+.ribbon{background:var(--sand);color:var(--green);padding:13px 20px;text-align:center;font-size:13px;font-weight:700}.ribbon span{margin:0 14px;color:#a58b57}
+section{scroll-margin-top:85px}.section{max-width:1180px;margin:auto;padding:68px 24px}.section-head{text-align:center;margin-bottom:32px}.kicker{color:#9b7e45;font-size:12px;font-weight:800;letter-spacing:1px}.section h2{font-size:clamp(25px,3vw,36px);color:var(--green);margin:5px 0 8px}.section-head p{margin:0 auto;color:var(--muted);max-width:670px;font-size:14px}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.welcome-card,.ambassador{border-radius:22px;padding:28px;background:var(--white);border:1px solid #e8e0d0;box-shadow:0 10px 30px rgba(44,65,49,.05)}.welcome-card h3,.ambassador h3{margin:0 0 10px;color:var(--green);font-size:20px}.welcome-card p,.ambassador p{margin:0;color:var(--muted);font-size:14px}
+.ambassador{background:linear-gradient(135deg,#e1e9dc,#f6f0e2);display:flex;align-items:center;gap:18px}.person-icon{flex-shrink:0;width:76px;height:76px;border-radius:22px;background:var(--green);color:#f0dfae;display:grid;place-items:center;font-size:33px}.ambassador .role{font-size:12px;color:#987a42;font-weight:800}.ambassador h3{font-size:23px;margin:2px 0 5px}
+.programs-wrap{background:#edf0e7}.program-controls{display:flex;gap:12px;justify-content:space-between;align-items:center;flex-wrap:wrap;margin:0 0 24px}.searchbox{display:flex;align-items:center;gap:10px;background:white;border:1px solid #dce2d5;border-radius:12px;padding:0 14px;min-width:min(100%,320px);flex:1;max-width:430px}.searchbox input{width:100%;border:0;outline:0;background:transparent;padding:13px 0;font:inherit;font-size:13px;color:var(--ink)}.count{font-size:12px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.program-card{background:var(--white);border:1px solid #e0e5d9;border-radius:18px;padding:23px;min-height:135px;display:flex;flex-direction:column;position:relative;overflow:hidden;transition:transform .22s,box-shadow .22s,border-color .22s}.program-card:before{content:"";position:absolute;width:95px;height:95px;border-radius:50%;background:var(--sage);left:-30px;top:-35px;opacity:.7}.program-card:hover{transform:translateY(-5px);box-shadow:0 15px 32px rgba(35,66,49,.1);border-color:#b9cbb7}.card-top{display:flex;justify-content:space-between;align-items:center;position:relative}.program-icon{width:47px;height:47px;border-radius:15px;background:#e4ebdf;color:var(--green);display:grid;place-items:center;font-size:23px}.num{font-size:11px;color:#9a8353;font-weight:800}.program-card h3{font-size:19px;color:var(--green);margin:18px 0 0;position:relative}.empty{display:none;text-align:center;padding:32px;color:var(--muted)}
+.values{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.value{border:1px solid #e4ddcd;background:#fffdf8;padding:21px;border-radius:16px;text-align:center}.value span{font-size:25px}.value h3{font-size:15px;color:var(--green);margin:8px 0 3px}.value p{font-size:12px;color:var(--muted);margin:0}
+.closing{background:linear-gradient(120deg,#dfe8d9,#f5ecda);text-align:center;padding:50px 20px}.closing h2{color:var(--green);margin:0 0 8px;font-size:28px}.closing p{color:var(--muted);margin:0 auto 20px;max-width:600px;font-size:14px}
+footer{background:#1d392d;color:#e5ebdf;padding:25px 20px}.footer-inner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:18px;align-items:center;flex-wrap:wrap;font-size:12px}.footer-inner strong{color:#e6d3a0}.footer-small{color:#b7c7b8}
+.modal-backdrop{display:none;position:fixed;inset:0;background:rgba(16,31,23,.62);z-index:50;padding:20px;align-items:center;justify-content:center}.modal-backdrop.show{display:flex}.modal{background:var(--white);border-radius:22px;max-width:510px;width:100%;padding:30px;position:relative;box-shadow:0 20px 70px rgba(0,0,0,.25)}.modal-close{position:absolute;left:16px;top:12px;border:0;background:#e7ede3;color:var(--green);width:34px;height:34px;border-radius:50%;font-size:20px;cursor:pointer}.modal .program-icon{margin-bottom:12px}.modal h2{color:var(--green);margin:0 0 10px}.modal p{color:var(--muted);font-size:14px}.modal-note{border-right:3px solid var(--gold);background:#f4efe3;padding:12px 14px;font-size:13px;color:#58685b;border-radius:6px 0 0 6px}
+/* interactive program modal */
+
+.program-card{cursor:pointer}.program-card:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.program-details{display:none;position:fixed;inset:0;z-index:60;background:rgba(16,31,23,.68);padding:18px;align-items:center;justify-content:center}
+.program-details.show{display:flex}
+.details-panel{width:min(560px,100%);background:var(--cream);border-radius:22px;padding:24px;box-shadow:0 20px 60px rgba(0,0,0,.25)}
+.details-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px}
+.details-head h2{color:var(--green);margin:0;font-size:23px}
+.details-close,.back-button{border:0;border-radius:12px;background:var(--sage);color:var(--green);padding:9px 14px;font:inherit;font-weight:700;cursor:pointer}
+.detail-options{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.detail-option{min-height:125px;border:1px solid #dce2d5;border-radius:16px;background:var(--white);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--green);font-weight:800;font-family:inherit;font-size:16px;cursor:pointer;transition:.2s}
+.detail-option:hover{transform:translateY(-3px);border-color:#b9cbb7;box-shadow:0 10px 24px rgba(35,66,49,.08)}
+.detail-option span{font-size:30px}
+.content-view{display:none;text-align:center;padding:24px 12px 12px}
+.content-view.show{display:block}
+.content-view .empty-icon{font-size:42px;margin-bottom:8px}
+.content-view h3{color:var(--green);margin:0 0 6px}
+.content-view p{color:var(--muted);margin:0 0 18px;font-size:14px}
+
+.media-list{display:grid;gap:16px;margin-top:18px;text-align:right}
+.media-item{background:var(--white);border:1px solid #dce2d5;border-radius:16px;padding:12px;overflow:hidden}
+.media-item h4{margin:0 0 10px;color:var(--green);font-size:15px}
+.media-item video{width:100%;max-height:360px;border-radius:10px;background:#17251e;display:block}
+.media-item iframe{width:100%;height:430px;border:0;border-radius:10px;background:#fff}
+.media-link{display:inline-block;margin-top:10px;background:var(--green);color:white;padding:9px 14px;border-radius:10px;font-size:13px;font-weight:700}
+
+@media(max-width:500px){.detail-options{grid-template-columns:1fr}.detail-option{min-height:76px;flex-direction:row}.details-panel{padding:19px}}
+
+@media(max-width:850px){.hero-inner{grid-template-columns:1fr;padding-top:55px}.hero-art{display:none}.navlinks{gap:12px}.cards{grid-template-columns:repeat(2,1fr)}.values{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.nav{padding:10px 14px}.brand{font-size:13px}.brand small{font-size:10px}.seal{width:38px;height:38px}.navlinks a:not(.nav-cta){display:none}.hero-inner{padding:48px 20px 58px}.hero p{font-size:15px}.section{padding:48px 17px}.intro-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.program-card{min-height:130px}.values{grid-template-columns:repeat(2,1fr)}.ambassador{align-items:flex-start;padding:22px}.person-icon{width:60px;height:60px;border-radius:17px}.ribbon{font-size:11px}.ribbon span{margin:0 5px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header>
+  <nav class="nav" aria-label="التنقل الرئيسي">
+    <a class="brand" href="#home"><span>الثقافة المؤسسية<small>ثانوية خولة بنت الأسود</small></span></a>
+    <div class="navlinks">
+      <a href="#about">عن البوابة</a><a href="#programs">البرامج</a><a href="#values">قيمنا</a><a class="nav-cta" href="#ambassador">سفيرة الثقافة</a>
+    </div>
+  </nav>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow"> بوابة التميّز والانتماء</div>
+      <h1>معًا نصنع <span>ثقافة مؤسسية</span><br>ملهمة ومستدامة</h1>
+      <p>مساحتنا المشتركة للقيم، والانتماء، والأفكار الملهمة.</p>
+      <div class="actions"><a class="btn primary" href="#programs">تصفّحي البرامج <span>←</span></a><a class="btn ghost" href="#about">عن البوابة</a></div>
+    </div>
+    <div class="hero-art" aria-hidden="true"><div class="emblem"><div class="emblem-caption">قيم • عطاء • إبداع</div></div></div>
+  </div>
+</section>
+<div class="ribbon">انتماء يجمعنا  قيم نعيشها  أثر نصنعه  مستقبل نبتكره</div>
+<section id="about"><div class="section">
+  <div class="section-head"><div class="kicker">أهلًا بكنّ</div><h2>ثقافة تجمعنا</h2><p>قيم مشتركة، وروح فريق، وأثر جميل.</p></div>
+</div></section>
+<section id="ambassador"><div class="section" style="padding-top:0">
+  <div class="ambassador"><div class="person-icon"></div><div><div class="role">سفيرة الثقافة المؤسسية</div><h3>أ/ نوف العنزي</h3></div></div>
+</div></section>
+<section class="programs-wrap" id="programs"><div class="section">
+  <div class="section-head"><div class="kicker">برامجنا</div><h2>برامج الثقافة المؤسسية</h2><p>اختاري البرنامج للتعرّف عليه لاحقًا.</p></div>
+  <div class="program-controls"><label class="searchbox"><span>⌕</span><input id="search" type="search" placeholder="ابحثي عن برنامج..." aria-label="ابحثي عن برنامج"></label><div class="count" id="count" aria-live="polite">عرض 9 برامج</div></div>
+  <div class="cards" id="cards">
+    <article class="program-card" data-name="رفاه" tabindex="0" role="button" aria-label="فتح برنامج رفاه"><div class="card-top"><span class="num">01 / 09</span></div><h3>رفاه</h3></article>
+    <article class="program-card" data-name="برنامج تكافل" tabindex="0" role="button" aria-label="فتح برنامج تكافل"><div class="card-top"><span class="num">02 / 09</span></div><h3>برنامج تكافل</h3></article>
+    <article class="program-card" data-name="القيم المؤسسية" tabindex="0" role="button" aria-label="فتح برنامج القيم المؤسسية"><div class="card-top"><span class="num">03 / 09</span></div><h3>القيم المؤسسية</h3></article>
+    <article class="program-card" data-name="برنامج حياتك" tabindex="0" role="button" aria-label="فتح برنامج حياتك"><div class="card-top"><span class="num">04 / 09</span></div><h3>برنامج حياتك</h3></article>
+    <article class="program-card" data-name="برنامج التواصل الملهم" tabindex="0" role="button" aria-label="فتح برنامج التواصل الملهم"><div class="card-top"><span class="num">05 / 09</span></div><h3>برنامج التواصل الملهم</h3></article>
+    <article class="program-card" data-name="نهتم بك" tabindex="0" role="button" aria-label="فتح برنامج نهتم بك"><div class="card-top"><span class="num">06 / 09</span></div><h3>نهتم بك</h3></article>
+    <article class="program-card" data-name="الابتكار" tabindex="0" role="button" aria-label="فتح برنامج الابتكار"><div class="card-top"><span class="num">07 / 09</span></div><h3>الابتكار</h3></article>
+    <article class="program-card" data-name="برنامج مزايا" tabindex="0" role="button" aria-label="فتح برنامج مزايا"><div class="card-top"><span class="num">08 / 09</span></div><h3>برنامج مزايا</h3></article>
+    <article class="program-card" data-name="الصحة التنظيمية" tabindex="0" role="button" aria-label="فتح برنامج الصحة التنظيمية"><div class="card-top"><span class="num">09 / 09</span></div><h3>الصحة التنظيمية</h3></article>
+  </div>
+  <div class="empty" id="empty">لم نعثر على برنامج بهذا الاسم. جرّبي كلمة أخرى.</div>
+</div></section>
+<section id="values"><div class="section">
+  <div class="section-head"><div class="kicker">روحنا</div><h2>قيم نعيشها</h2></div>
+  <div class="values">
+    <article class="value"><h3>التعاون</h3></article>
+    <article class="value"><h3>التطوير</h3></article>
+    <article class="value"><h3>الاهتمام</h3></article>
+    <article class="value"><h3>الابتكار</h3></article>
+  </div>
+</div></section>
+<section class="closing"><h2>معًا نصنع الفرق</h2><p>ثقافتنا تبدأ منّا.</p><a class="btn primary" href="#programs">البرامج ↑</a></section>
+</main>
+
+<div class="program-details" id="programDetails" role="dialog" aria-modal="true" aria-labelledby="detailsTitle">
+  <div class="details-panel">
+    <div class="details-head">
+      <h2 id="detailsTitle">اسم البرنامج</h2>
+      <button class="details-close" id="detailsClose" aria-label="إغلاق">×</button>
+    </div>
+    <div id="categoryView">
+      <div class="detail-options">
+        <button class="detail-option" type="button" data-category="الصور"><span>️</span>الصور</button>
+        <button class="detail-option" type="button" data-category="الفيديوهات">الفيديوهات</button>
+        <button class="detail-option" type="button" data-category="الملفات">الملفات</button>
+      </div>
+    </div>
+    <div class="content-view" id="contentView" aria-live="polite">
+      <h3 id="contentTitle">الصور</h3>
+      <div id="mediaContent"></div>
+      <button class="back-button" id="backToCategories" type="button">العودة للأقسام</button>
+    </div>
+  </div>
+</div>
+
+<footer><div class="footer-inner"><div><strong>بوابة الثقافة المؤسسية</strong><br><span class="footer-small">ثانوية خولة بنت الأسود</span></div><div>سفيرة الثقافة المؤسسية: <strong>أ/ نوف العنزي</strong></div><div class="footer-small">قيم نعيشها · أثر نصنعه</div></div></footer>
+<script>
+const search=document.getElementById('search');
+const cards=[...document.querySelectorAll('.program-card')];
+const count=document.getElementById('count');
+const empty=document.getElementById('empty');
+const programDetails=document.getElementById('programDetails');
+const detailsTitle=document.getElementById('detailsTitle');
+const detailsClose=document.getElementById('detailsClose');
+const categoryView=document.getElementById('categoryView');
+const contentView=document.getElementById('contentView');
+const contentTitle=document.getElementById('contentTitle');
+const mediaContent=document.getElementById('mediaContent');
+let activeProgram='';
+function filterCards(){
+  const q=search.value.trim().toLocaleLowerCase('ar');let n=0;
+  cards.forEach(card=>{const show=card.dataset.name.toLocaleLowerCase('ar').includes(q);card.style.display=show?'flex':'none';if(show)n++;});
+  count.textContent=`${n} من 9 برامج`;empty.style.display=n?'none':'block';
+}
+function openProgram(card){
+  activeProgram=card.dataset.name;
+  detailsTitle.textContent=activeProgram;
+  categoryView.style.display='block';contentView.classList.remove('show');
+  programDetails.classList.add('show');detailsClose.focus();
+}
+function closeProgram(){programDetails.classList.remove('show');}
+cards.forEach(card=>{
+  card.addEventListener('click',()=>openProgram(card));
+  card.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();openProgram(card);}});
+});
+document.querySelectorAll('.detail-option').forEach(button=>{
+  button.addEventListener('click',()=>{
+    const category=button.dataset.category;
+    contentTitle.textContent=category;
+    mediaContent.innerHTML='';
+    // جميع المشاركات الحالية تابعة لبرنامج رفاه فقط.
+    if(activeProgram==='رفاه' && category==='الفيديوهات'){
+      mediaContent.innerHTML=`<div class="media-list">
+        <article class="media-item"><video controls preload="metadata"><source src="media/video-1.mp4" type="video/mp4">المتصفح لا يدعم تشغيل الفيديو.</video></article>
+        <article class="media-item"><video controls preload="metadata"><source src="media/video-2.mp4" type="video/mp4">المتصفح لا يدعم تشغيل الفيديو.</video></article>
+      </div>`;
+    } else if(activeProgram==='رفاه' && category==='الملفات'){
+      mediaContent.innerHTML=`<div class="media-list"><article class="media-item">
+        <h4>اليوم العالمي لحقوق الإنسان</h4>
+        <iframe src="media/human-rights.pdf" title="ملف اليوم العالمي لحقوق الإنسان"></iframe>
+        <a class="media-link" href="media/human-rights.pdf" target="_blank" rel="noopener">فتح الملف أو تحميله</a>
+      </article></div>`;
+    } else {
+      mediaContent.innerHTML='<p>لا يوجد محتوى حاليًا</p>';
+    }
+    categoryView.style.display='none';contentView.classList.add('show');
+  });
+});
+document.getElementById('backToCategories').addEventListener('click',()=>{
+  contentView.classList.remove('show');categoryView.style.display='block';
+});
+detailsClose.addEventListener('click',closeProgram);
+programDetails.addEventListener('click',event=>{if(event.target===programDetails)closeProgram();});
+document.addEventListener('keydown',event=>{if(event.key==='Escape')closeProgram();});
+search.addEventListener('input',filterCards);
+</script>
+</body>
+</html>
